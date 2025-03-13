@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color:rgb(56, 75, 36) ;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Input Section - Now Positioned at the Top */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Keeps content at the top */
+  min-height: 50vh; /* Avoids pushing content too low */
+  margin-top: 30px; /* Adjust spacing */
+}
+
+/* Card Design */
+.card {
+  background-color: rgb(101, 133, 60);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+  margin: 20px auto; /* Centers card */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Show input form */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Main Content - No longer pushed too low */
+#mainContent {
+  margin-top: 40px; /* Push it up for better alignment */
+}
+
+/* Grid Layout for Cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 20px; /* Reduced padding so it's closer to the top */
+  justify-items: center;
+}
+
+/* Ensure images inside cards look good */
+.illustration-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Animations for Cards */
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Cards become visible one by one */
+.show-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Text Animation */
+.card-text {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.show-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    margin-top: 30px; /* Keeps input form near the top */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
