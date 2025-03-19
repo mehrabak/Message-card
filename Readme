@@ -1,0 +1,28 @@
+Thank You, Teacher! Website
+Description
+This is a heartfelt tribute website dedicated to Sir Misbah, expressing gratitude for his dedication and mentorship. The website features inspiring messages, quotes, and a special thank-you note to honor his contributions.
+
+Features.
+Greeting Section – This  website access is limited if you want to see the website you have to enter Misbah in input name field  
+Main Content Section – Displays a warm welcome message, heartfelt quotes, and appreciation notes.
+Special Message Page – A beautifully designed message .
+Interactive Elements – Animated text and transitions for a dynamic user experience.
+Technologies Used
+HTML – Structure of the website.
+CSS – Styling and layout.
+JavaScript – Interactivity and animations.
+Google Fonts – Custom typography.
+File Structure
+index.html – Main webpage with greeting and thank-you messages.
+text.html – Special message page with a personalized note.
+style.css – Styling for the main page.
+text.css – Styling for the special message page.
+script.js – JavaScript for interactive features.
+assets/ – Contains images used in the design.
+How to Use
+Open index.html in a web browser.
+Explore the main content with messages and quotes.
+Click on the email icon to view a special message on text.html.
+Credits
+Created by: Mehrab
+

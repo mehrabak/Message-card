@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const texts = document.querySelectorAll(".animate-text");
 
   verifyButton.addEventListener("click", function() {
-    if (nameInput.value.trim().toLowerCase() === "mehrab") {
+    if (nameInput.value.trim().toLowerCase() === "misbah") {
       greetingContainer.style.display = "none";
       mainContent.style.display = "block";
 
@@ -15,18 +15,18 @@ document.addEventListener("DOMContentLoaded", function() {
       cards.forEach((card, index) => {
         setTimeout(() => {
           card.classList.add("show-card");
-        }, index * 3000);
+        }, index * 700);
       });
 
       // Animate text inside cards with a delay after cards appear
       texts.forEach((text, index) => {
         setTimeout(() => {
           text.classList.add("show-text");
-        }, 800 + index * 3000);
+        }, 800 + index * 700);
       });
 
     } else {
-      alert("Access Denied! Please enter the correct name.");
+      alert("Access is limited! Please enter the correct name.");
     }
   });
 });

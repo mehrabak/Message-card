@@ -1,7 +1,8 @@
 /* Global Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color:rgb(56, 75, 36) ;
+  font-family: "Tinos", serif;
+  background: linear-gradient(to right, #030700,  rgb(91, 107, 61));
+  color: rgb(255, 242, 217);
   text-align: center;
   padding: 20px;
   margin: 0;
@@ -9,22 +10,44 @@ body {
 
 /* Input Section - Now Positioned at the Top */
 .container {
+ 
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Keeps content at the top */
-  min-height: 50vh; /* Avoids pushing content too low */
-  margin-top: 30px; /* Adjust spacing */
+  align-items: center; 
+  min-height: 15svh; 
+  margin-top: 0px; 
+}
+
+#name{
+  font-family: "Tinos", serif;
+  color: cadetblue;
+  background-color: rgb(255, 242, 217);
+  border-style: none;
+  width: 150px;
+  padding: 5px;
+  border-radius: 4px ;
+  
+}
+
+
+#verifyButton{
+  width: 100px;
+  border-radius: 3px;
+  color: cadetblue;
+  border:rgb(134, 126, 126);
+  background-color: rgb(255, 242, 217);
+  padding: 5px;
 }
 
 /* Card Design */
 .card {
-  background-color: rgb(101, 133, 60);
+  background: rgb(103, 122, 66);
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 400px;
+  width: 350px;
   text-align: center;
-  margin: 20px auto; /* Centers card */
+  margin: 15px auto; /* Centers card */
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 1s ease-out, transform 1s ease-out;
@@ -32,20 +55,23 @@ body {
 
 /* Show input form */
 .visible {
-  opacity: 1;
+  
+   opacity: 1;
   transform: translateY(0);
 }
 
+
 /* Main Content - No longer pushed too low */
 #mainContent {
-  margin-top: 40px; /* Push it up for better alignment */
+  margin-top:0%;
+  top: 0px; /* Push it up for better alignment */
 }
 
 /* Grid Layout for Cards */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
+  gap: 5px;
   padding: 20px; /* Reduced padding so it's closer to the top */
   justify-items: center;
 }
@@ -83,7 +109,9 @@ body {
 .show-text {
   opacity: 1;
   transform: translateY(0);
+
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

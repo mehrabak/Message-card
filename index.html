@@ -3,31 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You, Teacher!</title>
+ <meta name="theme-color" content="#556B2F"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mark_email_unread" />
+ 
+<link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon">
+<title>Thank You, Teacher!</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="container">
     <div id="greeting-container" class="card visible">
       <div class="card-header">
-        <h2 class="card-title">Enter Your Name</h2>
+        <h2 class="card-title">Message For Sir Misbah</h2>
       </div>
       <div class="card-content">
-        <label for="name">Name:</label>
         <input id="name" type="text" placeholder="Enter your name" />
-        <button id="verifyButton">Verify →</button>
+        <button id="verifyButton">Verify </button>
       </div>
     </div>
   </div>
 
   <div id="mainContent" class="hidden">
     <h1 class="welcome-text animate">Welcome to the Website!</h1>
-    <p class="info-text animate">Visible only after verification.</p>
+    <p class="info-text animate"></p>
     
     <div class="grid-container">
       <div class="card animate">
         <div class="illustration-container">
-          <img src="./web.jpg" alt="Heartfelt Illustration">
+          <img src="./assets/illustration.jpg" alt="Teacher and students">
         </div>
         <p class="card-text animate-text">"A teacher's impact lasts a lifetime!"</p>
       </div>
@@ -39,23 +48,32 @@
             <cite>- Malcolm X</cite>
           </blockquote>
         </div>
-        <p class="card-text animate-text">"Keep learning, keep growing!"</p>
+        <p>May Allah bless you abundantly with joy,health and continued success in all you do.You remain in our prayers and we hope to make you proud as we carry your teachings into world.You've left an indelible mark on our lives.</p>
+        <blockquote><p id="quote-text">Your guidance has always been rooted in wanting the best for us,and for that ,we are forever thankful.</p></blockquote>
+        <p class="card-text animate-text">"Keep learning, keep growing!"</p>  
       </div>
 
       <div class="card animate">
-        <div class="thank-you-message">
+        <div c\\\lass="thank-you-message">
           <h1 id="thank-you-text">Thank You!</h1>
         </div>
         <p class="card-text animate-text">"We appreciate your dedication and hard work."</p>
+        <blockquote>
+          <p id="quote-text">"The best teachers are those who show you where to look ,but don\'t tell you what to look."</p>
+          <cite>- Alexandra K. </cite>
+        </blockquote>
+
+        <blockquote>
+          <p id="quote-text">"Teaching is not a profession,it/'s a passion."</p>
+          <cite>- John F.Podojil. </cite>
+        </blockquote>
+
+        <a href="./text.html"><span class="material-symbols-outlined">
+          mark_email_unread
+          </span></a>
       </div>
 
-      <div class="card animate">
-        <div class="navigation-container">
-          <a href="./text.html">Read a special message</a>
-        </div>
-        <p class="card-text animate-text">"Click here for a heartfelt note."</p>
-      </div>
-    </div>
+     </div>
   </div>
 
   <script src="./script.js"></script>

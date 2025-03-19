@@ -1,0 +1,88 @@
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    background: linear-gradient(to right, #030700,  rgb(91, 107, 61));
+    color: rgb(255, 242, 217);
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Card Container */
+  .scard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 242, 217);
+    background: rgb(103, 122, 66);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(19, 15, 15, 0.3);
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .scard:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Card Styling */
+  .card3 {
+
+    padding: 30px;
+    text-align: center;
+    max-width: 500px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  h1 {
+    color: rgb(255, 242, 217);
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .scard {
+      width: 100%;
+      padding: 15px;
+    }
+    
+    .card3 {
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 1.8rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
