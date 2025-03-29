@@ -128,3 +128,28 @@ body {
     width: 90%;
   }
 }
+
+/* Mobile-specific styles (320px - 480px) */
+@media (max-width: 480px) {
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #name {
+    width: 90%;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 6px;
+  }
+
+  #verifyButton {
+    width: 95%;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}
